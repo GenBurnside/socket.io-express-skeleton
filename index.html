@@ -1,0 +1,21 @@
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+  var socket = io('http://localhost:3000', { transports: ["websocket","jsonp-polling","xhr-polling","polling"] });
+
+  var user = 12345;
+
+  socket.on(user, function(msg) {
+    console.log('socket.io: ' + msg);
+
+    switch (msg) {
+      case "User":
+        //get latest user info from DB
+        break;
+      case "Permission":
+        //get latest user permission info from DB
+        break;
+    }
+
+  });
+</script>

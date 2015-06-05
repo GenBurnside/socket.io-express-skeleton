@@ -1,0 +1,30 @@
+{
+  "name": "socketio-poc",
+  "version": "0.0.1",
+  "description": "Use socket.io to push messages from an Express API",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.12.4",
+    "socket.io": "^1.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GenBurnside/socketio-poc.git"
+  },
+  "keywords": [
+    "socket.io",
+    "express",
+    "node",
+    "nodejs"
+  ],
+  "author": "Matt Hughes <matthughes.tech@gmail.com> (http://matthughes.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GenBurnside/socketio-poc/issues"
+  },
+  "homepage": "https://github.com/GenBurnside/socketio-poc"
+}
