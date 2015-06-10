@@ -2,8 +2,8 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-app.post('/userUpdate/:id', function (req, res) {
-  console.log('POST: ' + req.url);
+app.patch('/user/:id', function (req, res) {
+  console.log('PATCH: ' + req.url);
 
   //do user update here
 
@@ -11,8 +11,8 @@ app.post('/userUpdate/:id', function (req, res) {
   res.status(200).send({ message: 'User update accepted' });
 });
 
-app.post('/permissionUpdate/:id', function (req, res) {
-  console.log('POST: ' + req.url);
+app.patch('/permission/:id', function (req, res) {
+  console.log('PATCH: ' + req.url);
 
   //do permission update here
 
